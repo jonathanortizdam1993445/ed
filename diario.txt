@@ -1,0 +1,45 @@
+1º--- instalar git
+
+	sudo apt-get install git
+
+2º--->crear cuenta en github
+3º--->crear un repositorio en github
+4º--->clonar el repositorio de github en nuestro ordenador
+	
+    git clone https://github.com/jonathanortizdam1993445/ed.git 
+
+5º---->crear un archivo en nuestra carpeta de git   
+   
+	gedit hola-mundo.git.txt
+   	  ls
+   	  ls -l
+   	  git status
+
+6º---->añadir el archivo hola-mundo.git.txt al repositorio de github
+
+  	 13  git add .
+  	 14  git status
+
+7º---->configurar en nuestro ordenador acceso remotamente a github
+ 
+   16  git config --global user.name jonathanortizdam1993445
+   17  git config --global user.email dam.jortiz@institutoserpis.org
+   18  git commit -n "hola mundo desde git"
+   19  git config --global user.email jonathanortizisa@hotmail.com
+   20  git commit -n "hola mundo desde git"
+8º--->preparar para subir un fichero
+   
+   git commit -m "hola mundo desde git"
+   git log
+   git checkout a8b9a4e5
+   git checkout master
+9º--->subir el archivo o fichero
+   38  git push
+   39  git config --global push.default simple
+   40  git config --list
+   41  git push
+   42  git status
+10º--->crear un archivo llamado diario.txt
+   50  gedit diario.txt
+   51  histoy > diario.txt
+   52  history > diario.txt
