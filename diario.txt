@@ -43,3 +43,10 @@
    50  gedit diario.txt
    51  histoy > diario.txt
    52  history > diario.txt
+11º--->fases de compilación
+
+-preprocesado ggc -E holamundo.c > holamundo.preprocesado
+-compilación ggc -S holamundo.c >holamundo.s
+-ensamblado ggc -C holamundo.c > holamundo.o
+-enlazado ggc -o holamundo.c > holamundo
+
