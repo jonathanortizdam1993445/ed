@@ -11,7 +11,7 @@ public class Array {
 	System.out.println("tercer elemento " +v[2]);
 	System.out.println("suma del array " +suma(v));
 	}
-	
+
 	private static int suma(int [] v){
 //		metodo del elemento v.length
 		int suma =0;
@@ -22,14 +22,31 @@ public class Array {
 		return suma;
 		
 	}
+public static int menor (int[] v){
+		int menor=v[0];
+		for (int index =0 ;index< v.length ; index++){
+			if (v[index]<menor){
+				menor=v[index];
+			}
+		}
+			return menor;
+		
+}
+public static int indexOf (int [] v, int item) {
+	//implementación basada en algoritmos
+	int index=0;
+	while (index < v.length -1 && v[index]!=item)
+		index++;
+	if (index == v.length)
+	return -1;
+	return 0;
 	
-	private static int menor(int [] v){
-//		devuelve el valor menor del vector
-		for (int index=0 ; index < v.length; index++)
-			menorvector=menor < v[0];  
-			return menor;		
-	}
-	}
+}
+	
+}
+
+
+	
 	
 	
 	
