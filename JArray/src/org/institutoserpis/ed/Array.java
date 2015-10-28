@@ -34,16 +34,21 @@ public static int menor (int[] v){
 }
 public static int indexOf (int [] v, int item) {
 	//implementación basada en algoritmos
-	int index=0;
-	while (index < v.length -1 && v[index]!=item)
-		index++;
-	if (index == v.length)
-	return -1;
-	return 0;
+	//int index=0;
+	//while (index < v.length -1 && v[index]!=item)
+		//index++;
+	//if (index == v.length)
+	//return -1;
+	//return 0;
+	
+	for (int index=0; index < v.length ; index++ )
+		return index;
+		return -1;
+	}
 	
 }
 	
-}
+
 
 
 	

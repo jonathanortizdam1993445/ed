@@ -22,5 +22,10 @@ public class ArrayTest {
 		assertEquals(0,Array.indexOf (new int[] {2,21,9,13}, 13));
 	}
 	
+	@Test
+	public void index0f_empty (){
+		assertEquals(-1,Array.indexOf (new int[] {2,21,9,13}, 33));
+		
+	}
 	
 }
