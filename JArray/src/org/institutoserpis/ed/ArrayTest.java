@@ -24,8 +24,13 @@ public class ArrayTest {
 	
 	@Test
 	public void index0f_empty (){
-		assertEquals(-1,Array.indexOf (new int[] {2,21,9,13}, 33));
+		assertEquals(-1,Array.indexOf (new int[] {}, 33));
 		
 	}
 	
+	@Test
+	public void sort() {
+		assertEquals(7,Array.menor(new int[] {9,8,12,7}));
+		Array sort; 
+	}
 }

@@ -23,14 +23,22 @@ public class Array {
 		
 	}
 public static int menor (int[] v){
-		int menor=v[0];
-		for (int index =0 ;index< v.length ; index++){
-			if (v[index]<menor){
-				menor=v[index];
-			}
-		}
-			return menor;
-		
+//		int menor=v[0];
+//		for (int index =0 ;index< v.length ; index++)
+//			if (v[index]<menor)
+//				menor=v[index];
+//				return menor;
+	
+			//Para buscar el menor valor de los vectores y Para ponerlos en orden desde int aux hasta v[posmenor]=aux
+			int posmenor=0;
+			int aux=v[0];
+			v[0]=v[posmenor];
+			v[posmenor]=aux;
+			for (int index=1; index < v.length ; index++)
+				if (v[index] < v[posmenor])
+					posmenor =index;
+				return v[posmenor];
+	
 }
 public static int indexOf (int [] v, int item) {
 	//implementación basada en algoritmos
@@ -42,11 +50,13 @@ public static int indexOf (int [] v, int item) {
 	//return 0;
 	
 	for (int index=0; index < v.length ; index++ )
-		return index;
-		return -1;
-	}
-	
+			return index;
+			return -1;
+		}
+			
 }
+	
+
 	
 
 
