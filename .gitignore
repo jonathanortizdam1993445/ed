@@ -13,3 +13,8 @@ hs_err_pid*
 
 #ignorar
 *~
+
+# cd monodevelop
+*.exe
+*.exe.mdb
+*.userprefs

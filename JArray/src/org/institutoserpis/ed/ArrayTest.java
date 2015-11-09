@@ -33,4 +33,6 @@ public class ArrayTest {
 		assertEquals(7,Array.menor(new int[] {9,8,12,7}));
 		Array sort; 
 	}
+	
 }
+
