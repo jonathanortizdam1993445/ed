@@ -1,3 +1,8 @@
+2015.11.09
+
+-instalamos monodevelop con los paquetes version control,doc browser ,nunit
+
+
 1º--- instalar git
 
 	sudo apt-get install git
@@ -49,4 +54,8 @@
 -compilación ggc -S holamundo.c >holamundo.s
 -ensamblado ggc -C holamundo.c > holamundo.o
 -enlazado ggc -o holamundo.c > holamundo
+
+
+
+
 
