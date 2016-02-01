@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Myactivity</string>
+    <string name="action_settings">ajustes</string>
+    <string name="buton_send">enviar</string>
+    <string name="edit_message">introduce un mensaje</string>
+</resources>
