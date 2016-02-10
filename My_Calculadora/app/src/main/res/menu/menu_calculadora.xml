@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.institutoserpis.ed.my_calculadora.Calculadora">
+    <item
+        android:id="@+id/Calculadora"
+        app:showAsAction="never"
+        android:title="@string/Calculadora"
+        />
+
+    <item
+        android:id="@+id/Cientifica"
+        app:showAsAction="never"
+        android:title="@string/Cientifica"
+        />
+</menu>

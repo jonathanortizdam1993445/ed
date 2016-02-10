@@ -4,4 +4,6 @@
     <string name="edit_message">enter a message</string>
     <string name="buton_send">Send</string>
     <string name="title_activity_display_message">MyMessage</string>
+    <string name="title_activity_android__intent">Android_Intent</string>
+    <string name="title_activity_calculadora">Calculadora</string>
 </resources>
