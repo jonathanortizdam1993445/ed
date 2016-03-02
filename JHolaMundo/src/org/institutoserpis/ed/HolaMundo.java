@@ -4,7 +4,7 @@ public class HolaMundo {
 	public static void main(String[] args) {
 		Scanner tcl =new Scanner (System.in);
 		System.out.println("como te llamas");
-		int nombre=tcl.nextInt();
+		String nombre=tcl.nextLine();
 		System.out.println("Hola Mundo desde eclipse");	
 		
 	}

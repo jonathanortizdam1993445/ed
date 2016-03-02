@@ -1,19 +1,19 @@
 package org.institutoserpis.ed.my_calculadora;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.EditText;
-import android.widget.Toast;
-import java.lang.*;
+        import android.os.Bundle;
+        import android.support.design.widget.FloatingActionButton;
+        import android.support.design.widget.Snackbar;
+        import android.support.v7.app.AppCompatActivity;
+        import android.support.v7.app.ActionBar;
+        import android.support.v7.widget.Toolbar;
+        import android.view.View;
+        import android.view.Menu;
+        import android.view.MenuItem;
+        import android.widget.EditText;
+        import android.widget.Toast;
+        import java.lang.*;
 
-import static android.widget.Toast.*;
+        import static android.widget.Toast.*;
 
 public class Calculadora extends AppCompatActivity {
 
@@ -56,11 +56,11 @@ public class Calculadora extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-       // if (id == R.id.action_settings) {
-       // return true;}
+        // if (id == R.id.action_settings) {
+        // return true;}
 
         if (id == R.id.Calculadora) {
-             makeText(this,getString(R.string.mensaje_1),LENGTH_LONG).show();}
+            makeText(this,getString(R.string.mensaje_1),LENGTH_LONG).show();}
         if (id == R.id.Cientifica) {
             makeText(this,getString(R.string.mensaje_2), LENGTH_LONG).show();}
 
@@ -105,7 +105,4 @@ public class Calculadora extends AppCompatActivity {
         toast1.show();
 
     }
-
-
-
 }

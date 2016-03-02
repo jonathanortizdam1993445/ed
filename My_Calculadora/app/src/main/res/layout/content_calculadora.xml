@@ -12,7 +12,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.institutoserpis.ed.my_calculadora.Calculadora"
     tools:showIn="@layout/activity_calculadora"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:visibility="visible">
 
     <TextView
         android:layout_width="wrap_content"
@@ -102,14 +104,25 @@
         android:layout_toEndOf="@+id/button3"
         android:onClick="DIVIDIR" />
 
-    <Button
-        android:layout_width="103dp"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EXPONENTE"
-        android:id="@+id/button5"
-        android:background="#000000"
-        android:textColor="#FFFFFF"
-        android:onClick="EXPONENTE"
-        android:visibility="visible" />
+        android:layout_weight="0.41"
+        android:longClickable="true"
+        android:clickable="true"
+        android:onClick="ocultarboton"
+        android:visibility="invisible">
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="EXPONENTE"
+            android:id="@+id/button5"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:onClick="EXPONENTE"
+            android:visibility="visible"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
 
 </LinearLayout>
