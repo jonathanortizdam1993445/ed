@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        dbpruebahelper.inic(this);
+
         ListView listview = (ListView) findViewById(R.id.listView);
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(
                 this,
