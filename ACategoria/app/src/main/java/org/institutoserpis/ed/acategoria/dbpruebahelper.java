@@ -1,9 +1,10 @@
 package org.institutoserpis.ed.acategoria;
 
+import android.database.Cursor;
 import android.database.sqlite.*;
 import  android.content.*;
 import android.provider.BaseColumns;
-
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class dbpruebahelper extends SQLiteOpenHelper {
 
 
     private static dbpruebahelper instance;
-    private static dbpruebahelper getInstance(){
+    public static dbpruebahelper getInstance(){
         if (instance==null)
                 instance= new dbpruebahelper(context);
         return  instance;
@@ -69,8 +70,25 @@ public class dbpruebahelper extends SQLiteOpenHelper {
     public List<Categoria> getCategorias(){
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
         //TODO sqLiteDatabase.query();
-        return null;
-    }
 
+        String [] columns = new String []{
+                TableCategoria._ID,
+                TableCategoria.COLUMN_NAME
+        };
+        Cursor cursor = sqLiteDatabase.query(
+                TableCategoria.NAME,
+                columns,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+        List<Categoria> categoria = new ArrayList<>();
+        while(cursor.moveToNext())
+            categoria.add(new Categoria(cursor.getLong(0),cursor.getString(1)));
+        cursor.close();
+        return categoria;
+    }
 
 }
